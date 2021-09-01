@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         mAuth = FirebaseAuth.getInstance()
         val user = mAuth.currentUser
 
-        //deneme
+
         Handler().postDelayed({
             if (user != null) {
                 val dashboardIntent = Intent(this, DashboardActivity::class.java)
